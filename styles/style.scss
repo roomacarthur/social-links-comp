@@ -1,18 +1,22 @@
+// Import Fonts
 @font-face {
   font-family: "Inter";
-  src: url("../assets/fonts/Inter-VariableFont_slnt\,wght.ttf")
-    format("truetype");
+  src: url("../assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
 
-$font-family: "Inter", sans-serif;
+// 🎨 Color Palette
 $color-dark: hsl(0, 0%, 8%);
 $color-med: hsl(0, 0%, 12%);
 $color-light: hsl(0, 0%, 20%);
 $color-white: #ffffff;
 $color-lime: hsl(75, 94%, 57%);
 
+// Font
+$font-family: "Inter", sans-serif;
+
+// ✨ Reset
 * {
   margin: 0;
   padding: 0;
@@ -23,84 +27,103 @@ body {
   background-color: $color-dark;
   color: $color-white;
   font-family: $font-family;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
 }
 
+// 📦 Profile Container
 .container {
-  width: 370px;
-  height: 600px;
+  width: 23rem; // 370px
   background-color: $color-med;
-  border-radius: 18px;
-  margin: 0 auto;
-  margin-top: 150px;
-  padding: 38px;
+  border-radius: 1.125rem;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+// 🏠 Profile Section
 .profile-image {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem; // 100px
+  height: 6.25rem;
   border-radius: 50%;
-  margin: 0 auto;
-  display: block;
+  margin-bottom: 1rem;
 }
 
 .profile-content {
-  text-align: center;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
+
 .user {
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .location {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   color: $color-lime;
 }
+
 .bio {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  margin-top: 24px;
-  margin-bottom: 10px;
+  margin-top: 1.5rem;
 }
 
+// 🔗 Social Links
 .socials {
-  margin-top: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
+  margin-top: 1.5rem;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
 }
 
 .social-link {
-  width: 100%;
-  padding: 14px;
-  border-radius: 8px;
-  background-color: $color-light;
-  margin: 8px 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  font-size: 14px;
+  background-color: $color-light;
+  padding: 0.875rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
   font-weight: 500;
+  text-decoration: none;
+  color: $color-white;
+  transition: background 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: $color-lime;
+    color: $color-dark;
+  }
 }
 
-.social-link:hover {
-  background-color: $color-lime;
-  cursor: pointer;
-  color: $color-dark;
-}
-
+// 📌 Attribution Footer
 .attribution {
   text-align: center;
-  margin-top: 20px;
-  font-size: 12px;
+  margin-top: 2rem;
+  font-size: 0.75rem;
   font-weight: 400;
+
+  a {
+    color: $color-lime;
+    text-decoration: none;
+  }
 }
 
-.attribution a {
-  color: $color-lime;
-  text-decoration: none;
+// 📱 Responsive Design
+@media (max-width: 480px) {
+  .container {
+    padding: 2rem;
+  }
 }
