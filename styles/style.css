@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #141414;
+  background-color: hsl(0, 0%, 8%);
   color: #FFFFFF;
   font-family: "Inter", sans-serif;
 }
@@ -19,7 +19,7 @@ body {
 .container {
   width: 320px;
   height: 600px;
-  background-color: #1F1F1F;
+  background-color: hsl(0, 0%, 12%);
   border-radius: 18px;
   margin: 0 auto;
   margin-top: 100px;
@@ -48,7 +48,7 @@ body {
 .location {
   font-size: 14px;
   font-weight: 500;
-  color: #CFEE6f;
+  color: hsl(75, 94%, 57%);
 }
 
 .bio {
@@ -70,7 +70,7 @@ body {
   width: 100%;
   padding: 10px;
   border-radius: 8px;
-  background-color: #333333;
+  background-color: hsl(0, 0%, 20%);
   margin: 8px 0;
   display: flex;
   justify-content: space-evenly;
@@ -80,9 +80,9 @@ body {
 }
 
 .social-link:hover {
-  background-color: #CFEE6f;
+  background-color: hsl(75, 94%, 57%);
   cursor: pointer;
-  color: #141414;
+  color: hsl(0, 0%, 8%);
 }
 
 .attribution {
@@ -93,6 +93,6 @@ body {
 }
 
 .attribution a {
-  color: #CFEE6f;
+  color: hsl(75, 94%, 57%);
   text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
