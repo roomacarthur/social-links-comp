@@ -1,108 +1,106 @@
 @font-face {
-    font-family: "Inter";
-    src: url("../assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
-    font-weight: 100 900;
-    font-style: normal;
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-VariableFont_slnt\,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
 }
 
 $font-family: "Inter", sans-serif;
 $color-dark: hsl(0, 0%, 8%);
 $color-med: hsl(0, 0%, 12%);
 $color-light: hsl(0, 0%, 20%);
-$color-white: #FFFFFF;
+$color-white: #ffffff;
 $color-lime: hsl(75, 94%, 57%);
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: $color-dark;
-    color: $color-white;
-    font-family: $font-family;
+body {
+  background-color: $color-dark;
+  color: $color-white;
+  font-family: $font-family;
 }
 
-
-.container{
-    width: 370px;
-    height: 600px;
-    background-color: $color-med;
-    border-radius: 18px;
-    margin: 0 auto;
-    margin-top: 150px;
-    padding: 38px;;
+.container {
+  width: 370px;
+  height: 600px;
+  background-color: $color-med;
+  border-radius: 18px;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 38px;
 }
 
-
-.profile-image{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 0 auto;
-    display: block;
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
 }
 
-.profile-content{
-    text-align: center;
-    margin-top: 20px;
+.profile-content {
+  text-align: center;
+  margin-top: 20px;
 }
 .user {
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
-.location{
-    font-size: 14px;
-    font-weight: 500;
-    color: $color-lime;
+.location {
+  font-size: 14px;
+  font-weight: 500;
+  color: $color-lime;
 }
-.bio{
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 24px;
-    margin-bottom: 10px
-}
-
-.socials{
-    margin-top: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
+.bio {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 24px;
+  margin-bottom: 10px;
 }
 
-.social-link{
-    width: 100%;
-    padding: 14px;
-    border-radius: 8px;
-    background-color: $color-light;
-    margin: 8px 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 14px;
-    font-weight:500;
+.socials {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
 }
 
-.social-link:hover{
-    background-color: $color-lime;
-    cursor: pointer;
-    color: $color-dark;
+.social-link {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  background-color: $color-light;
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.attribution{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 12px;
-    font-weight: 400;
+.social-link:hover {
+  background-color: $color-lime;
+  cursor: pointer;
+  color: $color-dark;
 }
 
-.attribution a{
-    color: $color-lime;
-    text-decoration: none;
+.attribution {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.attribution a {
+  color: $color-lime;
+  text-decoration: none;
 }
